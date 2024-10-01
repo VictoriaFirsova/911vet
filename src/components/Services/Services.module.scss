@@ -1,0 +1,224 @@
+@import '../../scss/variables';
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Разделяет контейнеры по ширине */
+  padding: 40px;
+}
+
+.textButtonContainer {
+  justify-content: center;
+  max-width: 800px;
+  background-color: $primary-color;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Отступ между текстом и кнопкой */
+}
+
+.textContainer {
+  color: $fifth-color;
+  text-align: center;
+}
+
+.textContainer h2 {
+  font-weight: 1000;
+  font-size: 1.5rem;
+  color: $fifth-color;
+}
+
+.textContainer h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: $fifth-color;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.socialMedia a {
+  color: $fifth-color;
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.socialMedia a:hover {
+  color: $fourth-color;
+}
+
+.cards {
+  display: flex;
+  flex: 1 1 calc(50% - 20px);
+  flex-grow: initial;
+  flex-wrap: wrap; /* Позволяет карточкам переноситься на следующую строку */
+  gap: 60px; /* Отступы между карточками */
+  justify-content: center;
+}
+
+/* Основной стиль карточек */
+.card {
+  flex: 1 1 calc(50% - 20px); /* Карточки занимают 1/2 ширины контейнера с учетом отступов */
+  box-sizing: border-box; /* Включает padding и border в ширину и высоту */
+  max-width: 300px; /* Максимальная ширина карточки */
+  background-color: $fifth-color; /* Фоновый цвет карточки */
+  padding: 20px; /* Отступы внутри карточки */
+  border-radius: 8px; /* Скругление углов карточки */
+  width: 300px;
+  align-items: center;
+}
+
+.cards h3 {
+  text-align: center;
+  color: $primary-color;
+  padding-bottom: 0%;
+  overflow:auto; /* или overflow-wrap */
+  font-weight: 800;
+  font-size: 1.5rem; /* Размер шрифта для заголовка */
+  margin: 10px 0; /* Отступы сверху и снизу */
+}
+.cards p {
+  align-content: center;
+  font-weight: 300;
+  font-size: 1.2rem; /* Размер шрифта для подзаголовка */
+  color: $fourth-color; /* Цвет подзаголовка */
+  margin: 0; /* Убираем отступы */
+}
+.card img {
+  margin-left: 20px;
+  height: 120px;
+  max-width: 150px;
+}
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  width: 50%;
+  height: auto; /* Высота модального окна - половина высоты экрана */
+  font-family: "Playfair Display", serif;
+  display: flex;
+  background-color: $fifth-color;
+  color: $primary-color;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 1000px;
+  text-align: center;
+  justify-content: center;
+}
+.modalContent h2 {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+.modalContent p {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.modalImageContainer {
+  justify-content: center; /* Центрируем текст по вертикали */
+  align-items: center;
+  flex: 1;
+}
+
+.serviceImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.modalTextContainer {
+  justify-content: center; /* Центрируем текст по вертикали */
+
+  padding: 20px 20px;
+  align-items: center;
+  flex: 2;
+}
+
+.closeButton {
+  font-weight: 300;
+  font-size: 1.2rem;
+  font-family: "Playfair Display", serif;
+  margin-top: 20px;
+  background-color: $primary-color;
+  color: $fifth-color;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.closeButton:hover {
+  background-color: $secondary-color;
+}
+@media (max-width: 1700px) {
+  .textButtonContainer {
+    max-width: 650px;
+  }
+}
+@media (max-width: 1450px) {
+  .textButtonContainer {
+    max-width: 500px;
+  }
+}
+@media (max-width: 1250px) {
+  .textButtonContainer {
+    max-width: 350px;
+  }
+  .modalContent {
+    flex-direction: column;
+  }
+  .modalContent h2 {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  .modalContent p {
+    font-weight: 150;
+    font-size: 1rem;
+  }
+  .serviceImage {
+    max-height: 350px;
+  }
+}
+/* Медиа-запрос для экранов с шириной меньше 480px */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1100px;
+    flex-direction: column; /* Переключает контейнеры в колонку */
+  }
+  .cards {
+      display: flex;
+      flex: 1 1 calc(50% - 20px);
+      flex-grow: initial;
+      flex-wrap: wrap; /* Позволяет карточкам переноситься на следующую строку */
+      gap: 60px; /* Отступы между карточками */
+      justify-content: center;
+    padding-top: 20px;
+  }
+  .textButtonContainer {
+    max-width: 100%;
+  }
+  .textButtonContainer a {
+    padding: 10px 20px;
+    display: inline-block; /* Позволяет кнопке занимать необходимое пространство */
+    margin-top: 20px; /* Отступ сверху кнопки */
+    text-decoration: none; /* Убирает подчеркивание ссылки */
+    max-width: 100%;
+  }
+
+  .textContainer h3 {
+    font-size: 16px; /* Размер шрифта для заголовка h3 */
+    line-height: 1.4; /* Межстрочный интервал */
+    overflow-wrap: break-word; /* Перенос слов */
+  }
+}

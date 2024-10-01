@@ -1,0 +1,24 @@
+.card {
+    border: 1px solid #ffffff; /* Цвет и стиль границы */
+    border-radius: 8px; /* Скругление углов */
+    overflow: hidden; /* Обрезка содержимого за границами */
+    text-align: center; /* Выравнивание текста по центру */
+    background-color: #ffffff; /* Цвет фона */
+    width: 100%; /* Ширина карточки на 100% от родителя */
+    max-width: 900px; /* Максимальная ширина карточки */
+  }
+
+  .title {
+    padding-bottom: 0%;
+    overflow:auto; /* или overflow-wrap */
+    font-weight: 800;
+    font-size: 1.5rem; /* Размер шрифта для заголовка */
+    margin: 10px 0; /* Отступы сверху и снизу */
+  }
+
+  .subtitle {
+    font-weight: 300;
+    font-size: 1.2rem; /* Размер шрифта для подзаголовка */
+    color: #666; /* Цвет подзаголовка */
+    margin: 0; /* Убираем отступы */
+  }

@@ -1,0 +1,51 @@
+
+.whiteButton {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-style: none;
+    font-weight: 700;
+    font-size: 0.875rem;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px 30px;
+
+    --border-radius: 30px;
+    font-family: Roboto, sans-serif !important;
+
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white !important;
+    color: #478ac9!important;
+}
+
+.whiteButton:hover {
+    color: #478ac9;
+    background-color: rgba(255, 255, 255, 0.574);
+}
+
+.blueButton {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-style: none;
+    font-weight: 700;
+    font-size: 0.875rem;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px 30px;
+
+    --border-radius: 30px;
+    font-family: Roboto, sans-serif !important;
+
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #478ac9!important;
+    color: #ffffff!important;
+}
+
+.blueButton:hover {
+    background-color: #043d54;
+    color: white;
+}
+

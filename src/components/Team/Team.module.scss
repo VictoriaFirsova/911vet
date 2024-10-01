@@ -1,0 +1,91 @@
+@import '../../scss/variables';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: auto; /* Задаем auto для высоты, чтобы она подстраивалась под содержимое */
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 4rem; /* Увеличили размер заголовка */
+  font-family: "Playfair Display", serif;
+  margin: 20px 0 0;
+  color: $primary-color;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 10px; /* Уменьшили отступы между карточками */
+  max-width: 1200px; /* Увеличили максимальную ширину контейнера для карточек */
+  width: 100%;
+  max-height: 900px;
+}
+
+.card {
+  flex: 1 1 40%; /* Позволяет карточкам занимать 40% ширины контейнера, обеспечивая два ряда */
+  max-width: 800px; /* Увеличили максимальную ширину карточек */
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px; /* Увеличили отступы внутри карточки */
+  background-color: $fifth-color;
+  border-radius: 8px;
+}
+.cards img {
+  width: 70%;
+  height: auto;
+  min-width: 300px; /* Устанавливаем минимальную ширину для изображения */
+  border-radius: 8px;
+}
+
+.card h2, .card h3 {
+  margin: 10px 0;
+  color: #478ac9;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    flex-wrap: wrap; /* Позволяет карточкам переноситься на новую строку */
+    max-height: none; /* Убираем ограничение по высоте */
+    gap: 20px; /* Увеличиваем отступы между карточками */
+  }
+
+  .card {
+    flex: 1 1 100%; /* Каждая карточка занимает 100% ширины контейнера */
+    max-width: 100%; /* Убираем максимальную ширину карточек */
+    padding: 20px; /* Увеличиваем отступы внутри карточки */
+  }
+
+  .cards img {
+    width: 80%;
+    height: auto;
+  }
+
+  .heading {
+    font-size: 2.5rem; /* Уменьшаем размер заголовка */
+  }
+}
+
+
+/* Медиа-запрос для экранов шириной до 480px */
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.8rem; /* Еще больше уменьшаем размер заголовка */
+  }
+  .cards img {
+    width: 100%;
+    height: auto;
+  }
+}

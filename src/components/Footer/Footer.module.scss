@@ -1,0 +1,84 @@
+@import '../../scss/_variables.scss';
+.footer {
+    font-family: Roboto, sans-serif;
+    background-color: $primary-color;
+    color: $fifth-color;
+    padding: 40px 0;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .logo img {
+    padding-top: 40px;
+    max-width: 150px;
+  }
+
+  .links,
+  .contact,
+  .socialMedia {
+    width: 20%;
+
+  }
+
+  .links ul,
+  .socialMedia {
+
+    list-style: none;
+    padding: 0;
+  }
+
+  .links ul li,
+  .contact p {
+
+    margin-bottom: 10px;
+  }
+
+  .links ul li a,
+  .contact a {
+    align-items: center;
+    color: $fifth-color;
+    text-decoration: none;
+  }
+
+  .links ul li a:hover {
+    text-decoration: underline;
+  }
+
+  .socialMedia a {
+    color: $fifth-color;
+    margin-right: 10px;
+    font-size: 24px;
+  }
+
+  .socialMedia a:hover {
+    color: $fifth-color;
+  }
+
+  .copyRight {
+    text-align: center;
+    padding: 20px 0;
+    background-color: $primary-color;
+  }
+
+  @media (max-width: 760px) {
+    .container > div {
+      flex: 1 1 45%; /* На экранах меньше 760px блоки занимают 45% контейнера */
+    }
+    .logo {
+      order: 3;
+    }
+
+  }
+
+  @media (max-width: 480px) {
+    .container > div {
+      flex: 1 1 100%; /* На очень узких экранах блоки занимают 100% */
+    }
+  }

@@ -1,0 +1,100 @@
+{
+    "about": "About",
+    "services": "Services",
+    "team": "Our Team",
+    "gallery": "Gallery",
+    "prices": "Price list",
+    "contact": "Contact",
+    "About": {
+    "title": "About Us",
+    "description": {
+      "part1": "Our clinic is committed to minimally invasive treatment methods to ensure your pet's comfort and speedy recovery.",
+      "part2": "Our specialists regularly undergo training and continuing education to apply the latest advances in veterinary medicine. We believe in disease prevention to avoid complex and prolonged treatments, taking care of your pet in advance."
+    }
+  },
+  "Main": {
+    "h2": "Modern Veterinary Care in Caring Hands",
+    "h1": "Your Favorite Clinic for Pets",
+    "h3": "We use advanced diagnostic and treatment methods to ensure your pet's health"
+},"Cards": {
+    "Consultation": {
+      "title": "Consultation",
+      "subtitle": "by a professional"
+    },
+    "Diagnosis": {
+      "title": "Diagnosis",
+      "subtitle": "accurate and precise"
+    },
+    "Treatment": {
+      "title": "Treatment",
+      "subtitle": "individualized approach"
+    },
+    "CheckUps": {
+      "title": "Check-Ups",
+      "subtitle": "safe and careful"
+    },
+    "Surgery": {
+      "title": "Surgery",
+      "subtitle": "performed with utmost care and precision"
+    },
+    "Vaccinations": {
+      "title": "Vaccinations",
+      "subtitle": "according to all standards"
+    }
+  },
+    "Services": {
+    "h2": "Contact Us",
+    "h1": "To Make an Appointment",
+    "h3": "You can make an appointment using social media, specifying a convenient time, the appropriate doctor, or the desired service."
+  },
+    "TeamCards": {
+      "Sasha": {
+        "title": "Dr. Alexandr",
+        "subtitle": "Restorative Dentist"},
+      "Dima": {
+        "title": "Dr. Dmitrii",
+        "subtitle": "Orthodontist"}},
+    "Gallery": {
+      "title": "Gallery"},
+    "Team": {
+      "title": "Our Team"},
+    "Prices": {
+      "InitialVisit": "Initial Visit",
+      "FollowUpVisit": "Follow-Up Visit",
+      "Microchipping": "Microchipping",
+      "VaccinationNotIncluded": "Vaccination (vaccine not included in the price)",
+      "PassportIssuance": "Passport Issuance",
+      "IntramuscularInjection": "Intramuscular Injection",
+      "SubcutaneousInjection": "Subcutaneous Injection",
+      "ExpressDiagnosisViralInfections": "Express Diagnosis for Viral Infections",
+      "AccompanyingDocumentsIssuance": "Issuance of Accompanying Documents",
+      "IntravenousAdministration": "Intravenous Administration of Medications",
+      "NailTrimming": "Nail Trimming",
+      "title" : "Price list",
+      "service" : "Service",
+      "price" : "Price"},
+    "Footer": {
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "links": "Quick Links",
+      "contacts": "Contact Us",
+      "follow": "Follow Us"
+    },
+    "Modal": {
+      "title": "Make an Appointment",
+      "form": {
+        "phone": "Phone",
+        "name": "Name",
+        "email": "Email",
+        "date": "Date",
+        "time": "Time"
+      },
+      "success": "Success!",
+      "appointment": "Your appointment request has been sent successfully.",
+      "close": "Close",
+      "button": "Make an appointment request",
+      "submit": "Submit"}
+
+
+  }

@@ -1,0 +1,78 @@
+@import '../../scss/variables';
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: $fifth-color;
+    text-align: center; /* Выравнивание текста по центру */
+  }
+
+  /* Контейнер для текста */
+  .textContainer {
+    flex: 1;
+    padding: 40px 10px;
+    color: $fourth-color;
+
+  }
+
+  .textContainer h1 {
+    font-weight: 500;
+    font-size: 3.75rem;
+    font-family: "Playfair Display", serif;
+    margin: 20px 0 0;
+
+  }
+  .textContainer h3 {
+    padding: 20px 20px;
+    font-weight: 500;
+    color:$third-color;
+    font-size: 1.3rem;
+    font-style: bold;
+  }
+  .textContainer h4 {
+    padding-top: 40px;
+    text-align: right;
+    font-style: italic;
+    font-size: large;
+    font-weight: 500;
+  }
+
+  .imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .imageContainer img {
+    max-width: 100%;
+    height: auto;
+  }
+@media (max-width: 1400px) {
+    .textContainer {
+      max-width: 460px;
+    }}
+  /* Медиа-запрос для мобильных устройств */
+@media (max-width: 1200px) {
+  .textContainer {
+    max-width: 100%;
+    order: 1;
+  }
+  .imageContainer {
+    order: 2;
+  }
+    .about {
+      display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .textContainer h1 {
+      font-weight: 500;
+      font-size: 2.8rem;
+    }
+
+}

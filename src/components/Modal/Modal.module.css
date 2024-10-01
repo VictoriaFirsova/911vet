@@ -1,0 +1,79 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Обеспечивает, что модальное окно будет поверх других элементов */
+  }
+
+  .modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+  }
+  h2 {
+    text-align: center;
+    color: #478ac9;
+    padding-bottom: 30px;
+  }
+
+  .closeButton {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column; /* Поля будут отображаться в колонку */
+    gap: 20px; /* Расстояние между разделами формы */
+  }
+
+  .formGroup {
+    display: flex;
+    align-items: center; /* Вертикальное выравнивание по центру */
+    gap: 10px; /* Расстояние между label и input */
+  }
+
+  label {
+    color: #478ac9;
+    font-weight: 300;
+    font-size: 1.2rem;
+    flex: 1; /* Метка занимает доступное пространство */
+    text-align: right; /* Выравнивание текста метки справа */
+    margin-right: 10px; /* Отступ между меткой и полем ввода */
+  }
+
+  input {
+
+    padding: 8px; /* Отступы внутри полей ввода */
+    border: 1px solid #ccc; /* Граница полей ввода */
+    border-radius: 4px; /* Скругление углов полей ввода */
+    width: 100%; /* Поля ввода занимают всю ширину контейнера */
+  }
+
+  button {
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding: 10px;
+    border: none;
+    background-color: #007bff; /* Цвет фона кнопки */
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3; /* Цвет фона кнопки при наведении */
+  }

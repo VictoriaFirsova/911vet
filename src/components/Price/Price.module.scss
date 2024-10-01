@@ -1,0 +1,73 @@
+@import '../../scss/variables';
+
+.backgroundContainer {
+  width: 100vw; /* Ширина на весь экран */
+  background-color: $fifth-color; /* Цвет фона */
+  padding: 20px 0; /* Отступы сверху и снизу, если нужно */
+  box-sizing: border-box; /* Включает отступы и границы в ширину элемента */
+}
+.priceListContainer {
+  position: relative;
+  font-weight: 300;
+  font-size: 1.25rem;
+  font-family: "Playfair Display", serif;
+  padding: 20px; /* Отступы вокруг списка */
+  background-color: $fifth-color;
+  border-radius: 8px;
+  max-width: 1200px; /* Максимальная ширина для больших экранов */
+  margin: 0 auto; /* Центрирует контейнер по горизонтали */
+  width: 95%; /* Растягивает контейнер на всю ширину с отступами */
+  }
+  .toggleIcon {
+    font-size: 48px; /* Размер иконки */
+    color: $primary-color;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; /* Центрируем иконку по горизонтали и добавляем отступ снизу */
+    width: 100%; /* Иконка занимает всю ширину контейнера */
+  }
+
+  .toggleIcon:hover {
+    color: $primary-color;
+  }
+
+  .title {
+    font-weight: 500;
+    font-size: 3.75rem;
+    text-align: center;
+    color: $primary-color;
+    margin-bottom: 20px;
+  }
+
+  .priceTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .priceTable th, .priceTable td {
+    border: 1px solid $fifth-color;
+    padding: 8px;
+    text-align: left;
+  }
+
+  .priceTable th {
+    background-color: $primary-color;
+    color: $fifth-color;
+  }
+
+  .priceTable tr:nth-child(even) {
+    background-color: $fourth-color;
+  }
+
+  .priceTable tr:hover {
+    background-color: $fifth-color;
+  }
+@media (max-width: 768px) {
+  .title {
+    font-weight: 500;
+    font-size: 2.8rem;
+  }
+
+ }

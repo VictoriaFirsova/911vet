@@ -1,0 +1,157 @@
+@import '../../scss/variables';
+
+.heading {
+    font-weight: 500;
+    font-size: 3.75rem;
+    font-family: "Playfair Display", serif;
+    color: $primary-color;
+}
+
+.gallery {
+    text-align: center; /* Центрирует текст в блоке */
+    width: 80%; /* Ширина контейнера галереи */
+    max-width: 1200px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера на странице */
+    padding-bottom: 40px;
+  }
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; /* Центрирование плитки по горизонтали */
+  }
+
+  .imageWrapper {
+    flex: 1 1 calc(33.333% - 20px); /* Устанавливает ширину каждого элемента плитки */
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .thumbnail {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Подгоняет изображение по размеру плитки */
+    transition: transform 0.3s ease;
+  }
+
+  .thumbnail:hover {
+    transform: scale(1.05); /* Увеличивает изображение при наведении */
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+
+  .fullscreenImage {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain; /* Подгоняет изображение по высоте и ширине */
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .pagination button {
+    border: none;
+    background-color: $fourth-color;
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .pagination button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  .pagination button.activePage {
+    background-color: $primary-color;
+    color: $fifth-color;
+  }
+
+/* Медиа-запрос для экранов шириной 768px и меньше */
+@media (max-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки для экранов шириной до 768px */
+  }
+  .heading {
+    font-weight: 500;
+    font-size: 2.8rem;
+  }
+}
+
+/* Медиа-запрос для экранов шириной 480px и меньше */
+@media (max-width: 480px) {
+  .grid {
+    display:  grid;
+    grid-template-columns: 1fr; /* 1 колонка для экранов шириной до 480px */
+  }
+    .imageWrapper {
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .thumbnail {
+      width: 100%;
+      height: auto;
+      object-fit: cover; /* Подгоняет изображение по размеру плитки */
+      transition: transform 0.3s ease;
+    }
+
+    .thumbnail:hover {
+      transform: scale(1.05); /* Увеличивает изображение при наведении */
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    .fullscreenImage {
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain; /* Подгоняет изображение по высоте и ширине */
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .pagination button {
+      border: none;
+      padding: 10px;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+
+    .pagination button:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+
+  }
